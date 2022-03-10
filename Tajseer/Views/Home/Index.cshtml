@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "الرئيسية";
+}
+<br />
+<br />
+<br />
+
+<div class="row rtl-row features">
+    <div class="col-md-5">
+        <div class="img-holder">
+            <img src="~/image/1x/video.png" onclick="toggle();" alt="video" />
+            <div class="trailer">
+                <video src="~/video/Tajseer.mp4" controls="true"></video>
+                <img src="~/image/1x/CLOSE.png" class="closebtn" onclick="toggle();" />
+            </div>
+        </div>
+    </div>
+    <div class="col-md-7">
+        <div class="feature-info text-center">
+            <div class="feature-title">تجسير</div>
+            <div class="feature-text">تجسير الفكر متخصصة في مجال تكنولوجيا المعلومات و حلول الاستشارات تعمل على تلبية احتياجات حلول التعليم الإلكتروني ابتداء في المملكة العربية السعودية والأردن منذ  عام (2010) ويرتكز معظم اهتمامها على تلبية الاحتياجات المتزايدة للمؤسسات التعليمية، والشركات في مجال التعليم الإلكتروني، حيث تقوم الشركة بالتخطيط والتنفيذ والتطوير والبرمجة، وتقديم الدعم الفني لمشاريع تكنولوجيا التعلم الإلكتروني، وبذلك فإنها تدعم المؤسسات التعليمية والشركات من خلال أنظمتها الذكية ذات النطاق الواسع من المهام المختلفة، والتي تشمل تطوير استراتيجيات العمل والتخطيط الكامل لتنفيذ مشاريع تعلم إلكتروني، وأفضل الطرق في اختيار الحلول المناسبة لإدارة التعليم الإلكتروني واختيار أفضل الأدوات في بناء المحتوى الإلكتروني المناسب</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="latest-news container-fluid">
+    <div class="container">
+        <div class="row-title">
+            الحلول التعليمية
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="post-box blue-bg">
+                <div class="post-img"></div>
+                <div class="post-link"><a href="#">اقرأ المزيد</a></div>
+            </div>
+            <div class="post-title text-center">الروبوتات</div>
+        </div>
+        <div class="col-sm-6 col-md-4">
+            <div class="post-box grey-bg">
+                <div class="post-img"></div>
+
+
+                <div class="post-link"><a href="#">اقرأ المزيد</a></div>
+            </div>
+            <div class="post-title text-center">ستيم</div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="post-box yellow-bg">
+                <div class="post-img"></div>
+
+
+                <div class="post-link"><a href="#">اقرأ المزيد</a></div>
+            </div>
+            <div class="post-title text-center">الفصول الدراسية الذكية</div>
+        </div>
+    </div>
+</div>
+</div>
+<script>
+    document.querySelector(".a").classList.add("active");
+    document.querySelectorAll(".b").classList.remove("active");
+    document.querySelectorAll(".c").classList.remove("active");
+    document.querySelectorAll(".d").classList.remove("active");
+</script>

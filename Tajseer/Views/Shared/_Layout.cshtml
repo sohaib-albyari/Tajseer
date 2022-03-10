@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Tajseer</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="~/image/Asset 10.ico" />
+    <link href="~/css/style.css" rel="stylesheet" />
+    <link href="~/css/fontawesome.css" rel="stylesheet" />
+    <link href="~/css/templatemo-sixteen.css" rel="stylesheet" />
+    <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-toggleable-md box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/image/logo.png" /> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-md-inline-flex justify-content-between " id="navbarResponsive">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link a" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link b" asp-area="" asp-controller="Home" asp-action="Privacy">من نحن</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الحلول التعليمية</a>
+                            <div class="dropdown-content">
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الروبوتات</a>
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">ستيم</a>
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الفصول الدراسية الذكية</a>
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الإستيديوهات التعليمية</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">التعلم الألكتروني</a>
+                            <div class="dropdown-content">
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">تطوير المقررات الإلكترونية</a>
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</a>
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الواقع الإفتراضي في التعليم</a>
+                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">أنظمة التعليم</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d" asp-area="" asp-controller="HomeController" asp-action="Index">المشاريع المنفذة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d" asp-area="" asp-controller="HomeController" asp-action="Index">شركاؤنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link d" asp-area="" asp-controller="HomeController" asp-action="Index">تواصل معنا</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <br />
+    <br />
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="~/image/banner/1.png" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>تطبيقات إلكترونية متكاملة</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/image/banner/2.png" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>تطوير المحتوى التعليمي الرقمي الخاص بمؤسّستك</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="~/image/banner/3.png" alt="Third slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>جسرك للعبور إلى العالم الرقمي</h4>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-info text-muted">
+        <!-- Section: Social media -->
+        <div class="container p-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-twitter"></i>
+                </a>
+
+                <!-- Google -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-google"></i>
+                </a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-instagram"></i>
+                </a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+                    <i class="fab fa-github"></i>
+                </a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-top">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            تجسير
+                        </h6>
+                        <p>
+                            تجسير الفكر متخصصة في مجال تكنولوجيا المعلومات و حلول الاستشارات تعمل على تلبية احتياجات حلول التعليم الإلكتروني ابتداء في المملكة العربية السعودية والأردن منذ  عام (2010) ويرتكز معظم اهتمامها على تلبية الاحتياجات المتزايدة للمؤسسات التعليمية، والشركات في مجال التعليم الإلكتروني، حيث تقوم الشركة بالتخطيط والتنفيذ والتطوير والبرمجة، وتقديم الدعم الفني لمشاريع تكنولوجيا التعلم الإلكتروني، وبذلك فإنها تدعم المؤسسات التعليمية والشركات من خلال أنظمتها الذكية ذات النطاق الواسع من المهام المختلفة، والتي تشمل تطوير استراتيجيات العمل والتخطيط الكامل لتنفيذ مشاريع تعلم إلكتروني، وأفضل الطرق في اختيار الحلول المناسبة لإدارة التعليم الإلكتروني واختيار أفضل الأدوات في بناء المحتوى الإلكتروني المناسب
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            المنتجات
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">تطبيقات إلكترونية</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">مواقع تعليمية</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">تطبيقات ذكية</a>
+                        </p>
+
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            روابط للمساعدة
+                        </h6>
+
+                        <p>
+                            <a href="#!" class="text-reset">الإعدادت</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">الطلب</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">مساعدة</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="border-bottom text-uppercase fw-bold mb-4">
+                            مواقعنا
+                        </h6>
+                        <p class="home"> مكتب الرياض</p>
+                        <p>
+                            <i class="fas fa-map-marked me-3"></i>
+                            شارع العليا
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@tajseerksa.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 0966114621717</p>
+                        <p class="home"> مكتب جدة</p>
+                        <p>
+                            <i class="fas fa-map-marked me-3"></i>
+                            شارع الستين
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@tajseerksa.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> 0966545992326</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+        <!-- Copyright -->
+        <div class="text-center text-black-50 p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            &copy; 2017 تجسير, جميع الحقوق محفوظة.
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+   
+
+    <div>
+        <button class="btn-up"><i class="fa fa-arrow-up"></i></button>
+    </div>
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/font-awesome/js/all.js"></script>
+    <script src="~/lib/font-awesome/js/fontawesome.js"></script>
+    <script src="~/lib/jquery/dist/jquery.nicescroll.min.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
