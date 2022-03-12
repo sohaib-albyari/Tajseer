@@ -466,21 +466,21 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    right: 65%;
+    right: 64%;
     bottom: 29%;
     flex-direction: column;
-    transform: skewX(371deg)
+    transform: skewX(370deg)
 }
 
 
-.footer-col .social-links a {
-    display: inline-block;
-    width: 40px;
-    margin: 0 10px 10px 0;
-    text-align: center;
-    line-height: 40px;
-    
-}
+    .footer-col .social-links a {
+        display: inline-block;
+        width: 40px;
+        margin: 0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        transform: skewX(354deg)
+    }
 
     .footer-col .social-links a:hover {
         color: #24262b;
