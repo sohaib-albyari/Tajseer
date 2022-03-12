@@ -414,6 +414,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-col {
     width: 25%;
     padding: 0 15px;
+    text-align:right;
 }
 
     .footer-col h4 {
@@ -482,14 +483,27 @@ h1, h2, h3, h4, h5, h6 {
         transform: skewX(354deg)
     }
 
-    .footer-col .social-links a:hover {
-        color: #24262b;
-        background-color: #ffffff;
+        .footer-col .social-links a:hover {
+            color: #0fa7bb;
+            background-color: #ffffff;
+        }
+
+.about {
+    margin-top: 10%;
+    margin-right: 2%;
+    float:right;
+    padding:0;
+}
+
+    .about span{
+        padding-right:11%;
+        color:white;
+        font-size:20px;
+        font-weight:bold;
+
     }
 
-.footer-col:nth-child(2){
-    width:10%;
-}
+
 /*responsive*/
 @media(max-width: 767px) {
     .footer-col {
