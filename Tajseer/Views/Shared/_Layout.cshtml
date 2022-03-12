@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html dir="rtl" lang="en">
+<html dir="rtl" lang="ar-sa">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,32 +17,57 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-md navbar-toggleable-md box-shadow mb-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/image/Asset 6.png" /> </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-collapse collapse d-md-inline-flex justify-content-between " id="navbarResponsive">
-                <ul class="navbar-nav flex-grow-1">
-                    <li class="nav-item">
-                        <a class="nav-link a" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link b" asp-area="" asp-controller="Home" asp-action="Privacy">مشاريعنا</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">خدماتنا</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link d dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">شركاؤنا</a>
-                    </li>
-                </ul>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a class="navbar-brand" id="navbar__logo" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/image/Asset 6.png" /> </a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a class="navbar__links a" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links b" asp-area="" asp-controller="Home" asp-action="Index">مشاريعنا</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links c" asp-area="" asp-controller="Home" asp-action="Index">خدماتنا</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__links d" asp-area="" asp-controller="Home" asp-action="Index">شركاؤنا</a>
+                </li>
+            </ul>
             <img class="learnimg" src="~/image/Asset 3.png" />
         </div>
     </nav>
+    @*<nav class="navbar navbar-expand-md navbar-toggleable-md box-shadow mb-0">
+            <div class="container-fluid">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/image/Asset 6.png" /> </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-md-inline-flex justify-content-between " id="navbarResponsive">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link a" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link b" asp-area="" asp-controller="Home" asp-action="Privacy">مشاريعنا</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">خدماتنا</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link d dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">شركاؤنا</a>
+                        </li>
+                    </ul>
+                </div>
+                <img class="learnimg" src="~/image/Asset 3.png" />
+            </div>
+        </nav>*@
     <br />
     <br />
     <br />
@@ -82,142 +107,202 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
+    <div style="background-color:red;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96.2 48.35" style="width:39px; height:19px;">
+
+            <style>
+                .cls-1 {
+                    fill: #fff;
+                }
+            </style>
+
+            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M1.55,27.94,20.41,46.81a5,5,0,0,0,6.82.36,4.81,4.81,0,0,0,.19-7l-8.55-8.55A1.53,1.53,0,0,1,20,29H50.78a5,5,0,0,0,5.08-4.56,4.81,4.81,0,0,0-4.81-5.07H20a1.53,1.53,0,0,1-1.08-2.62l8.35-8.36a5,5,0,0,0,.37-6.81,4.82,4.82,0,0,0-7-.19l-19,19.06A5.27,5.27,0,0,0,1.55,27.94Z" /><path class="cls-1" d="M68.9,29h5.55a4.82,4.82,0,1,0,0-9.63H68.9a4.82,4.82,0,1,0,0,9.63Z" /><path class="cls-1" d="M90.87,29h.52a4.82,4.82,0,0,0,0-9.63h-.52a4.82,4.82,0,1,0,0,9.63Z" /></g></g>
+        </svg>
+    </div>
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
+
+
     <!-- Footer -->
-    <footer class="text-center text-lg-start bg-info text-muted">
-        <!-- Section: Social media -->
-        <div class="container p-4">
-            <!-- Section: Social media -->
-            <section class="mb-4">
-                <!-- Facebook -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
 
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-twitter"></i>
-                </a>
 
-                <!-- Google -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-google"></i>
-                </a>
-
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-instagram"></i>
-                </a>
-
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
-                    <i class="fab fa-github"></i>
-                </a>
-            </section>
-            <!-- Section: Social media -->
-        </div>
-        <!-- Section: Social media -->
-        <!-- Section: Links  -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-top">
-            <div class="container text-center text-md-start mt-5">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            تجسير
-                        </h6>
-                        <p>
-                            تجسير الفكر متخصصة في مجال تكنولوجيا المعلومات و حلول الاستشارات تعمل على تلبية احتياجات حلول التعليم الإلكتروني ابتداء في المملكة العربية السعودية والأردن منذ  عام (2010) ويرتكز معظم اهتمامها على تلبية الاحتياجات المتزايدة للمؤسسات التعليمية، والشركات في مجال التعليم الإلكتروني، حيث تقوم الشركة بالتخطيط والتنفيذ والتطوير والبرمجة، وتقديم الدعم الفني لمشاريع تكنولوجيا التعلم الإلكتروني، وبذلك فإنها تدعم المؤسسات التعليمية والشركات من خلال أنظمتها الذكية ذات النطاق الواسع من المهام المختلفة، والتي تشمل تطوير استراتيجيات العمل والتخطيط الكامل لتنفيذ مشاريع تعلم إلكتروني، وأفضل الطرق في اختيار الحلول المناسبة لإدارة التعليم الإلكتروني واختيار أفضل الأدوات في بناء المحتوى الإلكتروني المناسب
-                        </p>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col cont-fot">
+                    <div class="footimg">
+                        <img src="~/image/footer.png" />
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            المنتجات
-                        </h6>
-                        <p>
-                            <a href="#!" class="text-reset">تطبيقات إلكترونية</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">مواقع تعليمية</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">تطبيقات ذكية</a>
-                        </p>
-
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <!-- Links -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            روابط للمساعدة
-                        </h6>
-
-                        <p>
-                            <a href="#!" class="text-reset">الإعدادت</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">الطلب</a>
-                        </p>
-                        <p>
-                            <a href="#!" class="text-reset">مساعدة</a>
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <!-- Links -->
-                        <h6 class="border-bottom text-uppercase fw-bold mb-4">
-                            مواقعنا
-                        </h6>
-                        <p class="home"> مكتب الرياض</p>
-                        <p>
-                            <i class="fas fa-map-marked me-3"></i>
-                            شارع العليا
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@tajseerksa.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> 0966114621717</p>
-                        <p class="home"> مكتب جدة</p>
-                        <p>
-                            <i class="fas fa-map-marked me-3"></i>
-                            شارع الستين
-                        </p>
-                        <p>
-                            <i class="fas fa-envelope me-3"></i>
-                            info@tajseerksa.com
-                        </p>
-                        <p><i class="fas fa-phone me-3"></i> 0966545992326</p>
-                    </div>
-                    <!-- Grid column -->
                 </div>
-                <!-- Grid row -->
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div> 
             </div>
-        </section>
-        <!-- Section: Links  -->
-        <!-- Copyright -->
-        <div class="text-center text-black-50 p-4" style="background-color: rgba(0, 0, 0, 0.05);">
-            &copy; 2017 تجسير, جميع الحقوق محفوظة.
-
         </div>
-        <!-- Copyright -->
     </footer>
+
+
+
+
+    <!--<footer class="text-center text-lg-start bg-info text-muted">-->
+    <!-- Section: Social media -->
+    <!--<div class="container p-4">-->
+    <!-- Section: Social media -->
+    <!--<section class="mb-4">-->
+    <!-- Facebook -->
+    <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fab fa-facebook-f"></i>
+    </a>-->
+    <!-- Twitter -->
+    <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fab fa-twitter"></i>
+    </a>-->
+    <!-- Google -->
+    <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fab fa-google"></i>
+    </a>-->
+    <!-- Instagram -->
+    <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fab fa-instagram"></i>
+    </a>-->
+    <!-- Linkedin -->
+    <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+        <i class="fab fa-linkedin-in"></i>
+    </a>-->
+    <!-- Github -->
+    <!--<a class="btn btn-outline-light btn-floating m-1" href="#!" role="button">
+            <i class="fab fa-github"></i>
+        </a>
+    </section>-->
+    <!-- Section: Social media -->
+    <!--</div>-->
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <!--<section class="d-flex justify-content-center justify-content-lg-between p-4 border-top">
+        <div class="container text-center text-md-start mt-5">-->
+    <!-- Grid row -->
+    <!--<div class="row mt-3">-->
+    <!-- Grid column -->
+    <!--<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">-->
+    <!-- Content -->
+    <!--<h6 class="text-uppercase fw-bold mb-4">
+            تجسير
+        </h6>
+        <p>
+            تجسير الفكر متخصصة في مجال تكنولوجيا المعلومات و حلول الاستشارات تعمل على تلبية احتياجات حلول التعليم الإلكتروني ابتداء في المملكة العربية السعودية والأردن منذ  عام (2010) ويرتكز معظم اهتمامها على تلبية الاحتياجات المتزايدة للمؤسسات التعليمية، والشركات في مجال التعليم الإلكتروني، حيث تقوم الشركة بالتخطيط والتنفيذ والتطوير والبرمجة، وتقديم الدعم الفني لمشاريع تكنولوجيا التعلم الإلكتروني، وبذلك فإنها تدعم المؤسسات التعليمية والشركات من خلال أنظمتها الذكية ذات النطاق الواسع من المهام المختلفة، والتي تشمل تطوير استراتيجيات العمل والتخطيط الكامل لتنفيذ مشاريع تعلم إلكتروني، وأفضل الطرق في اختيار الحلول المناسبة لإدارة التعليم الإلكتروني واختيار أفضل الأدوات في بناء المحتوى الإلكتروني المناسب
+        </p>
+    </div>-->
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <!--<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">-->
+    <!-- Links -->
+    <!--<h6 class="text-uppercase fw-bold mb-4">
+            المنتجات
+        </h6>
+        <p>
+            <a href="#!" class="text-reset">تطبيقات إلكترونية</a>
+        </p>
+        <p>
+            <a href="#!" class="text-reset">مواقع تعليمية</a>
+        </p>
+        <p>
+            <a href="#!" class="text-reset">تطبيقات ذكية</a>
+        </p>
+
+    </div>-->
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <!--<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">-->
+    <!-- Links -->
+    <!--<h6 class="text-uppercase fw-bold mb-4">
+            روابط للمساعدة
+        </h6>
+
+        <p>
+            <a href="#!" class="text-reset">الإعدادت</a>
+        </p>
+        <p>
+            <a href="#!" class="text-reset">الطلب</a>
+        </p>
+        <p>
+            <a href="#!" class="text-reset">مساعدة</a>
+        </p>
+    </div>-->
+    <!-- Grid column -->
+    <!-- Grid column -->
+    <!--<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">-->
+    <!-- Links -->
+    <!--<h6 class="border-bottom text-uppercase fw-bold mb-4">
+            مواقعنا
+        </h6>
+        <p class="home"> مكتب الرياض</p>
+        <p>
+            <i class="fas fa-map-marked me-3"></i>
+            شارع العليا
+        </p>
+        <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@tajseerksa.com
+        </p>
+        <p><i class="fas fa-phone me-3"></i> 0966114621717</p>
+        <p class="home"> مكتب جدة</p>
+        <p>
+            <i class="fas fa-map-marked me-3"></i>
+            شارع الستين
+        </p>
+        <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@tajseerksa.com
+        </p>
+        <p><i class="fas fa-phone me-3"></i> 0966545992326</p>
+    </div>-->
+    <!-- Grid column -->
+    <!--</div>-->
+    <!-- Grid row -->
+    <!--</div>
+    </section>-->
+    <!-- Section: Links  -->
+    <!-- Copyright -->
+    <!--<div class="text-center text-black-50 p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        &copy; 2017 تجسير, جميع الحقوق محفوظة.
+
+    </div>-->
+    <!-- Copyright -->
+    <!--</footer>-->
 
 
     <div>
