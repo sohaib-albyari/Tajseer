@@ -11,59 +11,39 @@
     <link href="~/css/fontawesome.css" rel="stylesheet" />
     <link href="~/css/templatemo-sixteen.css" rel="stylesheet" />
     <link href="~/lib/font-awesome/css/all.css" rel="stylesheet" />
+    @*fonts*@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Open+Sans:ital,wght@0,300;0,400;1,300;1,400&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-md navbar-toggleable-md box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/image/logo.png" /> </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-md-inline-flex justify-content-between " id="navbarResponsive">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link a" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link b" asp-area="" asp-controller="Home" asp-action="Privacy">من نحن</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الحلول التعليمية</a>
-                            <div class="dropdown-content">
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الروبوتات</a>
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">ستيم</a>
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الفصول الدراسية الذكية</a>
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الإستيديوهات التعليمية</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link d dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">التعلم الألكتروني</a>
-                            <div class="dropdown-content">
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">تطوير المقررات الإلكترونية</a>
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">البرامج الإثرائية لتعليم اللغة الإنجليزية إلكترونياً</a>
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">الواقع الإفتراضي في التعليم</a>
-                                <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">أنظمة التعليم</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d" asp-area="" asp-controller="HomeController" asp-action="Index">المشاريع المنفذة</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d" asp-area="" asp-controller="HomeController" asp-action="Index">شركاؤنا</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link d" asp-area="" asp-controller="HomeController" asp-action="Index">تواصل معنا</a>
-                        </li>
-                    </ul>
 
-                </div>
+    <nav class="navbar navbar-expand-md navbar-toggleable-md box-shadow mb-0">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"><img src="~/image/Asset 6.png" /> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-md-inline-flex justify-content-between " id="navbarResponsive">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link a" asp-area="" asp-controller="Home" asp-action="Index">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link b" asp-area="" asp-controller="Home" asp-action="Privacy">مشاريعنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link c dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">خدماتنا</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d dropbtn" asp-area="" asp-controller="HomeController" asp-action="Index">شركاؤنا</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+            <img class="learnimg" src="~/image/Asset 3.png" />
+        </div>
+    </nav>
+    <br />
     <br />
     <br />
     <br />
@@ -238,7 +218,7 @@
         </div>
         <!-- Copyright -->
     </footer>
-   
+
 
     <div>
         <button class="btn-up"><i class="fa fa-arrow-up"></i></button>

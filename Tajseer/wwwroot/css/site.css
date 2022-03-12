@@ -61,8 +61,10 @@ body {
 
 /*nav bar*/
 nav {
-    background: rgb(1,43,68);
-    background: linear-gradient(0deg, rgba(1,43,68,1) 85%, rgba(0,255,255,1) 100%);
+    background: #012B44;
+    position: fixed !important;
+    width:100%;
+    z-index:9999999999;
 }
 .footer {
   position: absolute;
