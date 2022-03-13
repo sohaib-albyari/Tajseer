@@ -171,7 +171,24 @@ h1, h2, h3, h4, h5, h6 {
     transition: all 0.3s ease;
 }*/
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 420px) {
+   
+        .navbar__menu.active {
+            background: #00162b !important;
+            top: 109% !important;
+            right: -24%;
+            opacity: 1;
+            position: relative;
+            transition: all 0.5s ease;
+            z-index: 99;
+            height: 26.5rem;
+            border-bottom-right-radius: 1rem;
+        }
+}
+
+        
+
+@media screen and (max-width: 1190px) {
     .navbar__container {
         display: flex;
         justify-content: space-between;
@@ -186,32 +203,43 @@ h1, h2, h3, h4, h5, h6 {
         height: 6rem;
     }
 
+    .navbar__links {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        height: 100%;
+        font-size: 1rem;
+        font-weight: bold;
+       margin: 0 2rem;
+    }
+
     .learnimg {
         display: none;
     }
 
     .navbar__menu {
-        display: grid;
-        grid-template-columns: auto;
+        display: flex;
+        flex-direction: column;
         margin: 0;
-        width: 100%;
         position: absolute;
-        top: -1000px;
         opacity: 0;
         transition: all 0.5s ease;
-        height: 50vh;
         z-index: -1;
-        background: #131313;
+
     }
 
         .navbar__menu.active {
-            background: #012b44;
-            top: 100%;
+            background: #00162b;
+            top: 109%;
             opacity: 1;
+            position: relative;
             transition: all 0.5s ease;
             z-index: 99;
-            height: 23rem;
+            height: 26.5rem;
             border-bottom-right-radius: 1rem;
+            width:50%;
+            
         }
 
     #navbar__logo {
@@ -224,18 +252,25 @@ h1, h2, h3, h4, h5, h6 {
             margin-top: -9%;
         }
 
-    .navbar__toggle .bar {
-        width: 25px;
-        height: 3px;
-        margin: 5px auto;
-        transition: all 0.3s ease-in-out;
-        background: #0ff;
+    .navbar__toggle {
+        position: absolute;
+        top: 0;
+        left: 0;
     }
+
+        .navbar__toggle .bar {
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            transition: all 0.3s ease-in-out;
+            background: #0ff;
+        }
 
     .navbar__item {
         width: 100%;
         border-bottom: 0.001rem solid #10b6cb75;
         padding: 1.5rem;
+        height: 100%;
     }
 
         .navbar__item:last-child {
@@ -414,7 +449,7 @@ h1, h2, h3, h4, h5, h6 {
 .footer-col {
     width: 25%;
     padding: 0 15px;
-    text-align:right;
+    text-align: right;
 }
 
     .footer-col h4 {
@@ -491,16 +526,15 @@ h1, h2, h3, h4, h5, h6 {
 .about {
     margin-top: 10%;
     margin-right: 2%;
-    float:right;
-    padding:0;
+    float: right;
+    padding: 0;
 }
 
-    .about span{
-        padding-right:11%;
-        color:white;
-        font-size:20px;
-        font-weight:bold;
-
+    .about span {
+        padding-right: 11%;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
     }
 
 
@@ -1044,14 +1078,13 @@ section p {
 
 .footer-col .social-links a svg:not(:root).svg-inline--fa {
     color: #004D6C;
-    width:27px;
-    height:27px;
-
+    width: 27px;
+    height: 27px;
 }
-    
-    svg:not(:root).svg-inline--fa {
-        color: white;
-    }
+
+svg:not(:root).svg-inline--fa {
+    color: white;
+}
 /*------------------------------------------------------------------
 	6 - Latest News Section Styles
 -------------------------------------------------------------------*/
