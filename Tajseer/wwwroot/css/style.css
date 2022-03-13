@@ -176,7 +176,7 @@ h1, h2, h3, h4, h5, h6 {
         .navbar__menu.active {
             background: #00162b !important;
             top: 109% !important;
-            right: -24%;
+            right: -9%;
             opacity: 1;
             position: relative;
             transition: all 0.5s ease;
@@ -452,13 +452,14 @@ h1, h2, h3, h4, h5, h6 {
     text-align: right;
 }
 
-    .footer-col h4 {
+    .footer-col h4{
         font-size: 18px;
         color: #ffffff;
         text-transform: capitalize;
         margin-bottom: 35px;
         font-weight: 500;
         position: relative;
+
     }
 
     /*  .footer-col h4::before {
@@ -476,21 +477,30 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 10px;
     }
 
-        .footer-col ul li a {
-            font-size: 16px;
-            text-transform: capitalize;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 300;
-            color: #bbbbbb;
-            display: block;
-            transition: all 0.3s ease;
+        .footer-col .about ul li a {
+            margin-bottom:11%;
+            width:110%;
         }
 
-            .footer-col ul li a:hover {
-                color: #ffffff;
-                padding-left: 8px;
-            }
+    .footer-col ul li a {
+        font-size: 16px;
+       /*text-transform: capitalize;*/
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+.footimg img{
+    margin-right:-59%;
+}
+
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
 
 .cont-fot {
     position: relative;
@@ -502,7 +512,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    right: 64%;
+    right: 0;
     bottom: 29%;
     flex-direction: column;
     transform: skewX(370deg)
@@ -524,20 +534,48 @@ h1, h2, h3, h4, h5, h6 {
         }
 
 .about {
-    margin-top: 10%;
-    margin-right: 2%;
+    margin-top: 50%;
+    margin-right: -55%;
     float: right;
     padding: 0;
 }
 
     .about span {
-        padding-right: 11%;
+        padding-right: 3%;
         color: white;
         font-size: 20px;
         font-weight: bold;
     }
 
+    /*amal*/
+.footer-location {
+    color: white !important;
+    margin-right: -5%;
+    margin-top: 4%;
+}
+.location_h4 {
+    border-bottom: 2px solid white;
+    padding-bottom: 5%;
+}
+.location_ul {
+    margin-right: 9%;
+    margin-top: -2%;
+}
+    .location_ul span {
+        padding-right: 3%;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        float: unset;
+    }
 
+    .location_ul li a.map{
+        padding-right:2%;
+    }
+
+.location_num li:first-child{
+    padding-top:2%;
+}
 /*responsive*/
 @media(max-width: 767px) {
     .footer-col {
