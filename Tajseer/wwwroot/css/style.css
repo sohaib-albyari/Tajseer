@@ -146,6 +146,12 @@ h1, h2, h3, h4, h5, h6 {
         max-width: 1300px;
         padding: 0;
     }
+    #navbar__logo img {
+        width: 97%;
+        height: 155%;
+        margin-top: -10%;
+        padding-right:0;
+    }
 
     .navbar {
         height: 6rem;
@@ -190,19 +196,12 @@ h1, h2, h3, h4, h5, h6 {
 
     #navbar__logo {
         padding-left: 25px;
+        margin-right: 0%;
     }
 
-        #navbar__logo img {
-            width: 12rem;
-            height: 7rem;
-            margin-top: -9%;
-        }
+        
 
-    .navbar__toggle {
-        position: absolute;
-        top: 10%;
-        left: 0;
-    }
+    
 
         .navbar__toggle .bar {
             width: 25px;
@@ -601,6 +600,12 @@ svg:not(:root).svg-inline--fa {
     background: #3DC4D5;
     display: inline-block;
 }
+.projects {
+    background-image: url(../image/bg03.png);
+    background-position:center;
+    background-size: cover;
+
+}
 
 .projects .container {
     position: relative;
@@ -628,6 +633,7 @@ svg:not(:root).svg-inline--fa {
     }
 
 .projects #content {
+    
     width: 100%;
     position: relative;
     z-index: 55;
