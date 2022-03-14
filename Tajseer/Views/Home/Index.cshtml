@@ -1,63 +1,62 @@
 ﻿@{
     ViewData["Title"] = "الرئيسية";
 }
+
 <br />
 <br />
 <br />
 
-<div class="row rtl-row features">
-    <div class="col-md-5">
-        <div class="img-holder">
-            <img src="~/image/1x/video.png" onclick="toggle();" alt="video" />
-            <div class="trailer">
-                <video src="~/video/Tajseer.mp4" controls="true"></video>
-                <img src="~/image/1x/CLOSE.png" class="closebtn" onclick="toggle();" />
-            </div>
-        </div>
-    </div>
-    <div class="col-md-7">
-        <div class="feature-info text-center">
-            <div class="feature-title">تجسير</div>
-            <div class="feature-text">تجسير الفكر متخصصة في مجال تكنولوجيا المعلومات و حلول الاستشارات تعمل على تلبية احتياجات حلول التعليم الإلكتروني ابتداء في المملكة العربية السعودية والأردن منذ  عام (2010) ويرتكز معظم اهتمامها على تلبية الاحتياجات المتزايدة للمؤسسات التعليمية، والشركات في مجال التعليم الإلكتروني، حيث تقوم الشركة بالتخطيط والتنفيذ والتطوير والبرمجة، وتقديم الدعم الفني لمشاريع تكنولوجيا التعلم الإلكتروني، وبذلك فإنها تدعم المؤسسات التعليمية والشركات من خلال أنظمتها الذكية ذات النطاق الواسع من المهام المختلفة، والتي تشمل تطوير استراتيجيات العمل والتخطيط الكامل لتنفيذ مشاريع تعلم إلكتروني، وأفضل الطرق في اختيار الحلول المناسبة لإدارة التعليم الإلكتروني واختيار أفضل الأدوات في بناء المحتوى الإلكتروني المناسب</div>
-
-        </div>
-    </div>
-</div>
-
-<div class="latest-news container-fluid">
+<section class="technology-v1" style="background-image:url(bg03.png)">
     <div class="container">
-        <div class="row-title">
-            الحلول التعليمية
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ot-heading text-center text-white">
+                    <h1>OUR SERVICES</h1>
+                    <h2 class="main-heading">We Deliver Solution with <br>the Goal of Trusting Relationships</h2>
+                </div>
+            </div>
+        </div>
+        <div class="space-15"></div>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="web-development.html" target="_blank">
+                    <div class="icon-main"><span class="flaticon-code-1"></span></div>
+                    <h5>EDUCATIONAL SOLUTIONS</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="mobile-development.html">
+                    <div class="icon-main"><span class="flaticon-android"></span></div>
+                    <h5>E-LEARNING</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="mobile-development.html">
+                    <div class="icon-main"><span class="flaticon-apple"></span></div>
+                    <h5>VIRTUAL REALITY</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="mobile-development.html">
+                    <div class="icon-main"><span class="flaticon-iot"></span></div>
+                    <h5>LEARNING SYSTEMS</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="it-services.html">
+                    <div class="icon-main"><span class="flaticon-time-and-date"></span></div>
+                    <h5>TRAINING</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="it-services.html">
+                    <div class="icon-main"><span class="flaticon-tv"></span></div>
+                    <h5>CONSULTING</h5>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-            <div class="post-box blue-bg">
-                <div class="post-img"></div>
-                <div class="post-link"><a href="#">اقرأ المزيد</a></div>
-            </div>
-            <div class="post-title text-center">الروبوتات</div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-            <div class="post-box grey-bg">
-                <div class="post-img"></div>
-
-
-                <div class="post-link"><a href="#">اقرأ المزيد</a></div>
-            </div>
-            <div class="post-title text-center">ستيم</div>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <div class="post-box yellow-bg">
-                <div class="post-img"></div>
-
-
-                <div class="post-link"><a href="#">اقرأ المزيد</a></div>
-            </div>
-            <div class="post-title text-center">الفصول الدراسية الذكية</div>
-        </div>
-    </div>
-</div>
+</section>
 <script>
     document.querySelector(".a").classList.add("active");
     document.querySelectorAll(".b").classList.remove("active");

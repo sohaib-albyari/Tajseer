@@ -2,13 +2,72 @@
     ViewData["Title"] = "Privacy Policy";
 }
 <h1>@ViewData["Title"]</h1>
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<p>Use this page to detail your site's privacy policy.</p>
+<style>
+    #carouselExampleIndicators{
+        display:none;
+    }
+    .lang-footer {
+
+        bottom: 0 !important;
+
+    }
+
+    .technology-v1{
+        display:flex;
+    }
+    
+</style>
+<section class="technology-v1" style="background-image:url(../../wwwroot/image/engtech.png)">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="ot-heading text-center text-white">
+                    <h1>OUR SERVICES</h1>
+                    <h2 class="main-heading">We Deliver Solution with <br>the Goal of Trusting Relationships</h2>
+                </div>
+            </div>
+        </div>
+        <div class="space-15"></div>
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="web-development.html" target="_blank">
+                    <div class="icon-main"><span class="flaticon-code-1"></span></div>
+                    <h5>EDUCATIONAL SOLUTIONS</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="mobile-development.html">
+                    <div class="icon-main"><span class="flaticon-android"></span></div>
+                    <h5>E-LEARNING</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="mobile-development.html">
+                    <div class="icon-main"><span class="flaticon-apple"></span></div>
+                    <h5>VIRTUAL REALITY</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="mobile-development.html">
+                    <div class="icon-main"><span class="flaticon-iot"></span></div>
+                    <h5>LEARNING SYSTEMS</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="it-services.html">
+                    <div class="icon-main"><span class="flaticon-time-and-date"></span></div>
+                    <h5>TRAINING</h5>
+                </a>
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 col-12">
+                <a class="tech-box text-center" href="it-services.html">
+                    <div class="icon-main"><span class="flaticon-tv"></span></div>
+                    <h5>CONSULTING</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 <script>
     document.querySelector(".b").classList.add("active");
     document.querySelectorAll(".a").classList.remove("active");
